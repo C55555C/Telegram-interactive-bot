@@ -4,9 +4,9 @@ const SECRET = ENV_BOT_SECRET;
 const ADMIN_UID = ENV_ADMIN_UID;
 
 const NOTIFY_INTERVAL = 3600 * 1000;
-const fraudDbUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/data/fraud.db';
-const notificationUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/data/notification.txt';
-const startMsgUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/data/startMessage.md';
+const fraudDbUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/main/data/fraud.db';
+const notificationUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/main/data/notification.txt';
+const startMsgUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/main/data/startMessage.md';
 const enable_notification = true;
 
 function apiUrl(methodName, params = null) {
