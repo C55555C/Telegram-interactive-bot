@@ -1,18 +1,20 @@
-# 🤖 Telegram Bot Cloudflare Worker
+# 🤖 Telegram Bot - Cloudflare Worker
 
-这是一个基于 Cloudflare Workers 的 Telegram 机器人，支持消息转发、管理员管理、黑名单检测等功能。
-
-## ✅ 特性
-
-- 支持用户消息自动转发
-- 管理员可 `/block` `/unblock` `/checkblock` 管理访客
-- 支持诈骗 UID 自动检测提醒
-- 无需服务器，部署在 Cloudflare Workers
+一个部署在 Cloudflare Workers 上的安全 Telegram 机器人，支持消息转发、屏蔽管理、诈骗检测和 webhook 注册。
 
 ## 🚀 快速开始
 
-1. 配置 `wrangler.toml` 中的环境变量
-2. 使用 `wrangler kv:namespace create nfd` 创建存储空间
-3. 部署：
-   ```bash
-   wrangler publish
+1. 设置环境变量（详见 wrangler.toml）
+2. 创建 KV 命名空间：`wrangler kv:namespace create nfd`
+3. 发布：`wrangler publish`
+4. 注册 Webhook：
+   ```
+   curl "https://<your-worker-url>/registerWebhook?key=your_webhook_secret"
+   ```
+
+## 📂 文件结构
+
+- `src/index.js`：主逻辑代码
+- `data/startMessage.md`：/start 欢迎语
+- `data/notification.txt`：周期性通知文本
+- `data/fraud.db`：UID 黑名单

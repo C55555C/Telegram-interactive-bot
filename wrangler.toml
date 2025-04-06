@@ -1,12 +1,12 @@
 name = "telegram-bot-worker"
 main = "src/index.js"
-compatibility_date = "2024-04-06"  # 更新日期
+compatibility_date = "2024-04-06"
 
 [vars]
-ENV_BOT_TOKEN = "your_bot_token_here"  # 机器人token
-ENV_BOT_SECRET = "your_webhook_secret"  # 校验密钥
-ENV_ADMIN_UID = "123456789"  # 接收消息TG用户UID
+ENV_BOT_TOKEN = "your_bot_token_here"
+ENV_BOT_SECRET = "your_webhook_secret"
+ENV_ADMIN_UID = "123456789"
 
 [[kv_namespaces]]
 binding = "nfd"
-id = "your-kv-namespace-id" # 用 wrangler link 或 Cloudflare 控制台设置
+id = "your-kv-namespace-id"

@@ -1,12 +1,13 @@
+
 // 强化版 Telegram Bot Worker
 // ✅ 安全性更高 ✅ 注释完整 ✅ 结构清晰
 
-const TOKEN = ENV_BOT_TOKEN; // 来自 BotFather 的 Token
-const WEBHOOK = '/endpoint'; // Webhook 路由路径
-const SECRET = ENV_BOT_SECRET; // Webhook 校验密钥
-const ADMIN_UID = ENV_ADMIN_UID; // 管理员 UID
+const TOKEN = ENV_BOT_TOKEN;
+const WEBHOOK = '/endpoint';
+const SECRET = ENV_BOT_SECRET;
+const ADMIN_UID = ENV_ADMIN_UID;
 
-const NOTIFY_INTERVAL = 3600 * 1000; // 通知间隔
+const NOTIFY_INTERVAL = 3600 * 1000;
 const fraudDbUrl = 'https://raw.githubusercontent.com/kissimok/ljj/main/data/fraud.db';
 const notificationUrl = 'https://raw.githubusercontent.com/kissimok/ljj/main/data/notification.txt';
 const startMsgUrl = 'https://raw.githubusercontent.com/kissimok/ljj/main/data/startMessage.md';
