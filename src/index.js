@@ -1,16 +1,12 @@
-
-// 强化版 Telegram Bot Worker
-// ✅ 安全性更高 ✅ 注释完整 ✅ 结构清晰
-
 const TOKEN = ENV_BOT_TOKEN;
 const WEBHOOK = '/endpoint';
 const SECRET = ENV_BOT_SECRET;
 const ADMIN_UID = ENV_ADMIN_UID;
 
 const NOTIFY_INTERVAL = 3600 * 1000;
-const fraudDbUrl = 'https://raw.githubusercontent.com/kissimok/ljj/main/data/fraud.db';
-const notificationUrl = 'https://raw.githubusercontent.com/kissimok/ljj/main/data/notification.txt';
-const startMsgUrl = 'https://raw.githubusercontent.com/kissimok/ljj/main/data/startMessage.md';
+const fraudDbUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/data/fraud.db';
+const notificationUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/data/notification.txt';
+const startMsgUrl = 'https://raw.githubusercontent.com/C55555C/telegram-bot-worker/data/startMessage.md';
 const enable_notification = true;
 
 function apiUrl(methodName, params = null) {
