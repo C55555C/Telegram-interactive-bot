@@ -47,6 +47,8 @@
 - `data/notification.txt`：周期性通知文本
 - `data/fraud.db`：UID 黑名单
 
+## 🤖 bot管理员使用方式
+
 -   /block    回复用户会加入UID黑名单
 -   /unblock  回复用户会解除UID黑名单
 -   /checkblock 检查用户是否在UID黑名单
