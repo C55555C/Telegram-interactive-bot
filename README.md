@@ -16,7 +16,7 @@
 
 ## 🚀 快速开始
 
-✅ 面板安装
+# ✅ 面板安装
 
 - 请访问： https://1panel.cn/docs/installation/online_installation/  也可以通过下面指令面板安装
 - RedHat / CentOS
@@ -60,14 +60,14 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 [1Panel Log]: 为了您的服务器安全，在您离开此界面后您将无法再看到您的密码，请务必牢记您的密码。
 ```
 
-✅ 额外安装的包
+# ✅ 额外安装的包
 
 安装 python 的虚环境包以及supervisor
 ```bash
 apt install python3-venv supervisor
 ```
 
-✅ 设置 .env 所需的配置
+# ✅ 设置 .env 所需的配置
 
 |名称|获取途径|用途|
 |---|---|---|
@@ -82,7 +82,7 @@ apt install python3-venv supervisor
 - 修改完检查无误后将.env_example 另存为 .env
 
 
-✅ 获取代码/构建python venv配置进程守护
+# ✅ 获取代码/构建python venv配置进程守护
 
 ```bash
 git clone https://github.com/C55555C/Telegram-interactive-bot.git
@@ -107,7 +107,7 @@ python -m interactive-bot
 - **进程数量**：`1`
 
 
-✅ Docker执行
+# ✅ Docker执行
 
 1. 安装docker ， 参看 [Install Docker under Ubuntu 22.04](https://gist.github.com/dehsilvadeveloper/c3bdf0f4cdcc5c177e2fe9be671820c7)
 2. 执行`docker build -t tgibot .` 生成一个tgibot的镜像
